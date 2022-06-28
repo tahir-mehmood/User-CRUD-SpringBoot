@@ -39,8 +39,12 @@ Following endpoints will be available:
 ```
 
 ```
-Response When No Users:
-Empty response body with response code '204 no content'
+request
+curl --location --request GET 'http://localhost:8080/user'
+
+
+response
+When No User found : Empty response body with response code '204 no content'
 
 JSON Array if users are found: HTTP STATUS 200
 [
